@@ -18,6 +18,25 @@
         <fieldset>
             <label for="number">Enter Your Phone Number (optional): <input id="number" type="tel" placeholder="555-123-4567" min="7" max="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label> <!--Is this correct? the "type" and following is what I'm unsure of-->
         </fieldset>
+        <fieldset>
+            <label for="dropdown">What Is Your Age?</label>
+            <select id="dropdown">
+                <option value="" selected disabled>(select one)</option>
+                <option value="18">18-24</option>
+                <option value="25">25-34</option>
+                <option value="35">35-44</option>
+                <option value="45">45-54</option>
+                <option value="55">55-64</option>
+                <option value="65">65+</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Of the following foods, which one is your favorite?</legend>
+                <label for="favorite-food"><input type="radio" name="radio" checked>Pizza</label>
+                <label for="favorite-food"><input type="radio" name="radio">Sushi</label>
+                <label for="favorite-food"><input type="radio" name="radio">Hamburger</label>
+                <label for="favorite-food"><input type="radio" name="radio">Tacos</label>
+        </fieldset>
     </form>
 </body>
 </html>
