@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #101336;
+    background-color: #0b0d27;
     margin: 0;
     padding: 0;
 }
@@ -18,7 +18,7 @@ body {
 #survey-form {
     max-width: 600px;
     margin: 20px auto;
-    background-color: #101337;
+    background-color: #0b0d25;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
