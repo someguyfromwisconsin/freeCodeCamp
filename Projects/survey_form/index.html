@@ -8,5 +8,16 @@
 <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">This is a project designed to demonstrate my skill in HTML and CSS through building an online survey form.</p>
+    <form id="survey-form" action=""> <!--ADD ACTION-->
+        <fieldset>
+            <label for="name">Enter Your Name: <input id="name" type="text" placeholder="Bob" required></label>
+        </fieldset>
+        <fieldset>
+            <label for="email">Enter Your Email: <input id="email" type="email" placeholder="Ross" required></label>
+        </fieldset>
+        <fieldset>
+            <label for="number">Enter Your Phone Number (optional): <input id="number" type="tel" placeholder="555-123-4567" min="7" max="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label> <!--Is this correct? the "type" and following is what I'm unsure of-->
+        </fieldset>
+    </form>
 </body>
 </html>
