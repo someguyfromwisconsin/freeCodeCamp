@@ -34,6 +34,14 @@ label {
     color: rgb(224, 222, 218);
 }
 
+#name, #email, #number {
+    background-color: #000000;
+}
+
+#name::placeholder, #email::placeholder, #number::placeholder {
+    color: #ffffff;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -65,7 +73,6 @@ textarea {
     box-sizing: border-box;
 }
 
-/* Styling for submit button (optional) */
 input[type="submit"] {
     background-color: #4caf50;
     color: white;
