@@ -34,13 +34,24 @@ label {
     color: rgb(224, 222, 218);
 }
 
-#name, #email, #number {
+#name, 
+#email, 
+#number {
     background-color: #000000;
 }
 
-#name::placeholder, #email::placeholder, #number::placeholder {
+#name::placeholder, 
+#email::placeholder, 
+#number::placeholder {
+    color: gray;
+}
+
+#name:focus,
+#email:focus,
+#number:focus {
     color: #ffffff;
 }
+
 
 input[type="text"],
 input[type="email"],
