@@ -34,6 +34,19 @@ label {
     color: rgb(224, 222, 218);
 }
 
+#number {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#number::-webkit-inner-spin-button,
+#number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 #name, 
 #email, 
 #number {
