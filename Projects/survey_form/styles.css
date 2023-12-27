@@ -31,7 +31,7 @@ fieldset {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: rgb(224, 222, 218);
 }
 
 input[type="text"],
@@ -51,8 +51,7 @@ select {
 }
 
 legend {
-    font-weight: bold;
-    color: #333;
+    color: rgb(224, 222, 218);
 }
 
 input[type="radio"],
