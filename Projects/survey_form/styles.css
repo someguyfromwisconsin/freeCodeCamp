@@ -51,6 +51,7 @@ label {
 #email, 
 #number {
     background-color: #000000;
+    color: #ffffff;
 }
 
 #name::placeholder, 
