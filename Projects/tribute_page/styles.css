@@ -1,0 +1,76 @@
+/* Reset some default styles to ensure consistency across browsers */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+#main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#title {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#img-div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#img-caption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#timeline {
+    margin: 20px 0;
+}
+
+#list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#list li {
+    margin-bottom: 10px;
+}
+
+#tribute-link-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#tribute-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#tribute-link:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    #main {
+        margin: 10px;
+    }
+}
