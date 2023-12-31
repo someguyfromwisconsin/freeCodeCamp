@@ -7,7 +7,7 @@ body, h1, h2, h3, p, ul {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #0f0a24;
+    background-color: rgb(141, 141, 141);
     color: #333;
     margin: 20px;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 #title {
-    color: #333;
+    color: #181818;
     text-align: center;
     margin-top: 20px;
 }
@@ -47,6 +47,7 @@ body {
 #list {
     list-style-type: none;
     padding: 0;
+    color: #181818;
 }
 
 #list li {
