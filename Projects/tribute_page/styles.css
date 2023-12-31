@@ -60,12 +60,22 @@ body {
 }
 
 #tribute-link {
-    color: #007BFF;
+    color: #0004ff;
     text-decoration: none;
     font-weight: bold;
 }
 
 #tribute-link:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #0004ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
