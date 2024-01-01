@@ -12,8 +12,25 @@ span[class~="sr-only"] { /* will select any span element whose class includes sr
     margin: -1px; /* This will ensure that not only are they no longer visible, but they are not even within the page view. */
   }
 
+/* Table Head Styling */
+h1 {
+    max-width: 37.25rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+}
 
+h1 .flex {
+    display: flex;
+    flex-direction: column-reverse; /* display the nested elements from bottom to top */
+    gap: 1rem;
+}
 
+h1 .flex span:first-of-type { /* targets first span */
+    font-size: 0.7em; /* makes it look like a sub-heading */
+}
 
+h1 .flex span:last-of-type {
+    font-size: 1.2em;
+}
 
 /* COMMENT */
