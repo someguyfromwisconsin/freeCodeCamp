@@ -33,4 +33,14 @@ h1 .flex span:last-of-type {
     font-size: 1.2em;
 }
 
+/* Create table border */
+section {
+    max-width: 40rem;
+    margin: 0 auto;
+    border: 2px solid #d0d0d5;
+}
+
+/* COMMENT */
+/* COMMENT */
+/* COMMENT */
 /* COMMENT */
