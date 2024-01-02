@@ -92,6 +92,11 @@ tbody th {
     width: calc(100% - 12rem);
 }
 
+tr[class="total"] {
+    border-bottom: 4px double #0a0a23;
+    font-weight: bold;;
+}
+
 /* COMMENT */
 /* COMMENT */
 /* COMMENT */
