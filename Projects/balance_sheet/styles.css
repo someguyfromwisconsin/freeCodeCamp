@@ -61,7 +61,7 @@ section { /* Create table border */
     padding: 0 0.75rem 1.5rem 0.75rem;
 }
 
-span:not(.sr-only) {
+span {
     font-weight: normal;
 }
 
