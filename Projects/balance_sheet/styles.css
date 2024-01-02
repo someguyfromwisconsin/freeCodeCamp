@@ -88,6 +88,10 @@ tbody td {
     max-width: 4rem;
 }
 
+tbody th {
+    width: calc(100% - 12rem);
+}
+
 /* COMMENT */
 /* COMMENT */
 /* COMMENT */
