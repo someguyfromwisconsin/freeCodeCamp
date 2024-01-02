@@ -135,6 +135,12 @@ tr.data th .description {
     margin-right: -13.5rem;
 }
 
+tr.data td {
+    vertical-align: top;
+    text-align: right;
+    padding: 0.3rem 0.25rem 0;
+}
+
 /* COMMENT */
 /* COMMENT */
 /* COMMENT */
