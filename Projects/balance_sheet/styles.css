@@ -97,6 +97,11 @@ tr[class="total"] {
     font-weight: bold;;
 }
 
+tr[class="total"] th {
+    text-align: left;
+    padding: 0.5rem 0 0.25rem 0.5rem
+}
+
 /* COMMENT */
 /* COMMENT */
 /* COMMENT */
