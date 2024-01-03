@@ -187,10 +187,58 @@
         </section>
         <section class="main-section" id="arrow_functions">
             <header>Arrow Functions</header>
-            <p></p>
-            <code></code>
+            <p>Arrow functions provide a more concise syntax for writing function expressions in JavaScript. They offer a shorter syntax compared to traditional function expressions and do not bind their own <code>this</code>, <code>arguments</code>, <code>super</code>, or <code>new.target</code>. Arrow functions are often used for inline functions, especially when passing functions as arguments or when defining short, one-off functions.</p>
             <ul>
-                <li></li>
+                <li>Basic Syntax:
+                    <code>// Traditional function expression
+                        const add = function (a, b) {
+                          return a + b;
+                        };
+                        
+                        // Arrow function
+                        const addArrow = (a, b) => a + b;
+                    </code>
+                </li>
+                <li>Handling Parameters:
+                    <ul>
+                        <li>If a function has a single parameter, you can omit the parentheses:
+                            <code>const square = x => x * x;
+                            </code>
+                        </li>
+                        <li>For functions with no parameters, you still need parentheses:
+                            <code>const greet = () => console.log("Hello, world!");
+                            </code>
+                        </li>
+                    </ul>
+                </li>
+                <li>Returning Objects:
+                    <p>When returning an object literal, you need to wrap it in parentheses to avoid confusion with the function block:</p>
+                    <code>const createPerson = (name, age) => ({ name: name, age: age });
+                        // or
+                        const createPersonShort = (name, age) => ({ name, age });
+                        </code>
+                </li>
+                <li>Handling <code>this</code>:
+                    <p>Arrow functions do not bind their own this value; instead, they inherit it from the enclosing scope. This behavior can be beneficial in certain situations, but it's important to be aware of the differences compared to traditional functions.</p>
+                    <code>function Counter() {
+                        this.count = 0;
+                      
+                        // Traditional function expression
+                        setInterval(function () {
+                          this.count++; // 'this' refers to the global object or undefined (in strict mode)
+                          console.log(this.count);
+                        }, 1000);
+                      
+                        // Arrow function (avoids the 'this' issue)
+                        setInterval(() => {
+                          this.count++;
+                          console.log(this.count);
+                        }, 1000);
+                      }
+                      
+                      const counter = new Counter();
+                      </code>
+                </li>
             </ul>
         </section>
     </main>
