@@ -35,8 +35,8 @@ body {
 }
 
 .main-section code {
-    background-color: #282c34; /* VS Code background color */
-    color: #abb2bf; /* VS Code text color */
+    background-color: #282c34;
+    color: #abb2bf;
     padding: 5px;
     font-family: 'Courier New', monospace;
     display: block;
@@ -69,4 +69,25 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    #navbar {
+        display: block; /* Show on smaller screens */
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+    
+    #navbar header {
+        margin-bottom: 10px;
+    }
+    
+    .nav-link {
+        margin: 5px 0;
+    }
+    
+    .main-section {
+        margin: 10px;
+    }
 }
