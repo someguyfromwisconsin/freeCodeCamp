@@ -61,10 +61,62 @@
         </section>
         <section class="main-section" id="destructuring">
             <header>Destructuring</header>
-            <p></p>
-            <code></code>
+            <p>Destructuring is a feature in JavaScript that allows you to extract values from arrays or properties from objects into distinct variables. It provides a concise and readable syntax for assigning values from arrays or objects to variables.</p>
             <ul>
-                <li></li>
+                <li>Array Destructuring:</li>
+                    <ul>
+                        <li>
+                            <code>// Basic Array Destructuring
+                                const numbers = [1, 2, 3];
+                                const [a, b, c] = numbers;
+                                
+                                console.log(a); // Output: 1
+                                console.log(b); // Output: 2
+                                console.log(c); // Output: 3
+                            </code>
+                        </li>
+                        <li>You can also skip elements using commas:
+                            <code>const [first, , third] = numbers;
+                                console.log(first, third); // Output: 1 3
+                            </code>
+                        </li>
+                        <li>Destructuring with the rest operator:
+                            <code>const [first, ...rest] = numbers;
+                                console.log(first); // Output: 1
+                                console.log(rest);  // Output: [2, 3]
+                            </code>
+                        </li>
+                    </ul>
+                <li>Object Destructuring:</li>
+                    <ul>
+                        <li>
+                            <code>// Basic Object Destructuring
+                                const person = { name: "John", age: 30 };
+                                const { name, age } = person;
+                                
+                                console.log(name); // Output: "John"
+                                console.log(age);  // Output: 30
+                            </code>
+                        </li>
+                        <li>Renaming variables during destructuring:
+                            <code>const { name: personName, age: personAge } = person;
+                                console.log(personName, personAge); // Output: "John" 30
+                            </code>
+                        </li>
+                        <li>Destructuring with default values:
+                            <code>const { name = "Anonymous", age = 25 } = person;
+                                console.log(name, age); // Output: "John" 30 (if 'name' and 'age' are present in the 'person' object)
+                            </code>
+                        </li>
+                        <li>Destructuring is commonly used in function parameters to extract values directly:
+                            <code>function printPerson({ name, age }) {
+                                console.log(`Name: ${name}, Age: ${age}`);
+                              }
+                              
+                              printPerson(person); // Output: "Name: John, Age: 30"
+                            </code>
+                        </li>
+                    </ul>
             </ul>
         </section>
         <section class="main-section" id="spread_operator">
