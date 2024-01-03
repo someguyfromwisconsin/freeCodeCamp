@@ -50,6 +50,23 @@
                     console.log(anotherLocalVariable); // Accessible, as it is declared with 'var'
                     </code>
             </ul>
+            <p>Note: <code>let</code> and <code>const</code>, variables are limited to the block or statement in which they are defined.</p>
+            <code>function exampleFunction() {
+                let blockScopedVariable = 40;
+                const constantVariable = 50;
+            
+                if (true) {
+                    console.log(blockScopedVariable); // Accessible
+                    console.log(constantVariable);    // Accessible
+                }
+            
+                console.log(blockScopedVariable); // Accessible
+                console.log(constantVariable);    // Accessible
+            }
+            
+            console.log(blockScopedVariable); // Error, not accessible outside the function
+            console.log(constantVariable);    // Error, not accessible outside the function
+            </code>
         </section>
         <section class="main-section" id="ternary_operator">
             <header>ternary Operator</header>
