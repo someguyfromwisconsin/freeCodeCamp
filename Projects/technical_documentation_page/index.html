@@ -43,12 +43,21 @@
             </ul>
         </section>
         <section class="main-section" id="ternary_operator">
-            <header>The Ternary Operator</header>
-            <p></p>
-            <code></code>
+            <header>The Ternary/Conditional Operator</header>
+            <p>The ternary operator, also known as the conditional operator, is a concise way to write an if-else statement in a single line of code. It takes three operands and evaluates a condition. If the condition is true, it returns the value of the first operand; otherwise, it returns the value of the second operand. The general syntax is as follows:</p>
+            <code>condition ? expressionIfTrue : expressionIfFalse;
+            </code>
             <ul>
-                <li></li>
+                <li>condition: This is the expression that is evaluated. If the condition is truthy, the expression before the : is executed; otherwise, the expression after the : is executed.</li>
+                <li>expressionIfTrue: The value returned if the condition is true./li>
+                <li>expressionIfFalse: The value returned if the condition is false.</li>
             </ul>
+            <code>var isRaining = true;
+                var weather = isRaining ? "Take an umbrella" : "Enjoy the sun";
+                
+                console.log(weather); // Output: "Take an umbrella"
+                
+            </code>
         </section>
         <section class="main-section" id="destructuring">
             <header>Destructuring</header>
