@@ -9,10 +9,37 @@
     <main id="main-doc">
         <section class="main-section" id="scope">
             <header>Scope</header>
-            <p></p>
-            <code></code>
+            <p>Scope refers to the context in which variables are declared and accessed. It defines the visibility and accessibility of variables in different parts of your code. JavaScript has two main types of scope: global scope and local scope.</p>
             <ul>
-                <li></li>
+                <li>Global Scope:
+
+                    Variables declared outside of any function or block have a global scope.
+                    They can be accessed from any part of the code, including within functions.
+                    Be cautious with global variables, as they can lead to naming conflicts and make it harder to manage your code.</li>
+                    <code>var globalVariable = 10;
+
+                        function exampleFunction() {
+                            console.log(globalVariable); // Accessible
+                        }
+                        </code>
+                <li>Local Scope:
+
+                    Variables declared within a function or block have a local scope.
+                    They are only accessible within the function or block where they are declared.
+                    This helps encapsulate variables and avoids naming conflicts with variables in other parts of the code.</li>
+                    <code>function exampleFunction() {
+                        var localVariable = 20;
+                        console.log(localVariable); // Accessible
+                    
+                        if (true) {
+                            var anotherLocalVariable = 30;
+                            console.log(anotherLocalVariable); // Accessible
+                        }
+                    }
+                    
+                    console.log(localVariable); // Error, not accessible outside the function
+                    console.log(anotherLocalVariable); // Accessible, as it is declared with 'var'
+                    </code>
             </ul>
         </section>
         <section class="main-section" id="ternary_operator">
