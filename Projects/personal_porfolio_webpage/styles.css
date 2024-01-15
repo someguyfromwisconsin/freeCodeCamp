@@ -47,7 +47,7 @@ body {
     text-align: center;
 }
 
-/* Projects Section */
+/* All Project Sections (Projects through freeCodeCamp) */
 #projects,
 #codecademy-section,
 #freecodecamp-section {
@@ -71,6 +71,7 @@ body {
     margin-top: 10px;
 }
 
+
 /* Codecademy Section */
 
 
@@ -78,3 +79,14 @@ body {
 
 
 /* Profile Section */
+.profile {
+    padding: 50px;
+    text-align: center;
+}
+
+#profile-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+}
