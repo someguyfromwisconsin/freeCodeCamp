@@ -31,3 +31,33 @@ body {
     text-decoration: none;
     color: white;
 }
+
+/* Section Styling */
+.section-title {
+    color: #333;
+}
+
+.section-subtitle {
+    color: #555;
+}
+
+/* Welcome Section */
+#welcome-section {
+    padding: 50px;
+    text-align: center;
+}
+
+
+/* Projects Section */
+
+
+
+/* Codecademy Section */
+
+
+
+/* freeCodeCamp Section */
+
+
+
+/* Profile Section */
